@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>forms</title>
+<style>
+#form{
+display:flex;
+justify-content:center;
+align-items:center;
+border:1px solid red;
+}
+form{
+border:1px solid red;
+width:50%;
+}
+.inp{
+
+ font-size:20px;
+ font-weight:300;
+border:1px solid red;
+}
+.hob{
+border:1px solid red;
+ font-size:20px;
+ font-weight:300;
+}
+label{
+float:left;
+width:30%;
+
+height:30px;
+}
+input,textarea{
+width:50%;
+border:1px solid grey;
+border-radius:10px;
+height:30px;
+}
+textarea{
+ height:30%;
+}
+.hob label{
+margin::0px;
+ font-size:20px;
+ font-weight:300;
+border:1px solid red;
+float:none;
+width:30%;
+}
+.hob div{
+padding:0px;
+border:1px solid green;
+}
+.hob input{
+border:1px solid red;
+width:20px;
+height:30px;
+}
+</style>
+</head>
+<body>
+<div id="form">
+<form action="" target="_blank" method="post" enctype="multipart/form-data">
+<!-- =========== input type text =============== --><!-- required --> 
+<div class="inp">
+<label for="name">name</label>
+<input type="text" name="" id="name" value="name" >
+</div>
+<!-- =========== input type password =============== -->
+<div class="inp">
+<label for="password">password</label>
+<input type="password" name="" id="password" placeholder="password">
+</div>
+<!-- =========== input type radio=============== -->
+<div class="hob">
+<label for=""> Gender</label>
+<label for="male">male</label>
+<input type="radio" name="gender" id="male" value="male">
+<label for="female">female</label>
+<input type="radio" name="gender" id="female" value="female">
+</div>
+<!-- =========== input type number =============== -->
+<div class="inp">
+<label for="age">age</label>
+<input type="number" name="age" id="age" placeholder="age" min="2" max="30">
+</div>
+<!-- =========== input type phone_number {tel} pattern =============== -->
+<div class="inp">
+<label for="phone">Phone Number</label>
+<input type="tel" name="phone" id="phone" pattern="[0-9]{10}" placeholder="phone number">
+</div>
+<!-- =========== input type checkbox =============== -->
+<div class="hob">
+<label for="hobbies">Hobbies : </label>
+<div>
+<label for="chess">Playing Chess</label>
+<input type="checkbox" name="hobbies" id="chess" value="chess">
+</div>
+<div>
+<label for="news">Watching News</label>
+<input type="checkbox" name="hobbies" id="news" value="news">
+</div>
+<div>
+<label for="soc">Scrolling Social Media</label>
+<input type="checkbox" name="hobbies" id="soc" value="soc">
+</div>
+</div>
+<!-- =========== input type Date =============== -->
+<div class="inp">
+<label for="date">Date</label>
+<input type="date" name="date" id="date" min="2022-01-01" max="2022-10-01">
+</div>
+<!-- =========== input type url =============== -->
+<div class="inp">
+<label for="site">Website</label>
+<input type="url" name="site" id="site">
+</div>
+<!-- =========== input type color =============== -->
+<div class="inp">
+<label for="color">Pick color</label>
+<input type="color" name="color" id="color">
+</div>
+<!-- =========== input type file =============== -->
+<div class="inp">
+<label for="file">file</label>
+<input type="file" name="file" id="file">
+</div>
+<!-- =========== input type email =============== -->
+<div>
+<label for="email">Email</label>
+<input type="email" name="email" id="email">
+</div>
+<!-- =========== textarea =============== -->
+<div class="inp">
+<label for="feed">feedback</label>
+<textarea id="feed" name="feed" rows="" cols="">hi! </textarea>
+</div>
+<button type="reset" >reset</button>
+<button type="submit" >submit</button>
+</form>
+</div>
+</body>
+
+
+</html>
