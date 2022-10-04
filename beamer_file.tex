@@ -1,0 +1,79 @@
+\documentclass{beamer}
+\usetheme{Warsaw} %
+\usecolortheme{spruce} %structure,crane
+\setbeamertemplate{frame numbering}[fraction]
+%\useinnertheme{metropolis}
+%\useoutertheme{metropolis}
+\usefonttheme{metropolis}
+\setbeamercolor{background canvas}{bg = white}
+\usepackage[utf8]{inputenc}
+\usepackage{multicol}
+\title[thank you]{presentation}
+\subtitle{hey there}
+\author{deva agulla}
+\institute{rgukt basar}
+\date{\today}
+
+\begin{document}
+\metroset{block=fill}
+\begin{frame}{frame 1}
+    \titlepage{}
+\end{frame}
+\title[thank you]{kj}
+\subtitle{hhkja there}
+\begin{frame}{frame 1}
+    \titlepage{}
+\end{frame}
+\begin{frame}[t]{Frame 2}
+  \begin{enumerate}[a]
+      \item item 1 
+      \item it\,em 2 %for forcing space
+      \item item 3
+  \end{enumerate}
+\end{frame}
+\begin{frame}[t]{frame 3}
+    \begin{block}{sample}
+      hi there \textcolor{magenta}{wassup} \rule{50}{1.0} 
+    
+    \end{block}
+    \only<1>{haii} 
+    \only<2>{hey}
+    hello how are you ?
+\end{frame}
+\begin{frame}{columns}
+ \begin{columns}[onlytextwidth]
+ \column{0.5\textwidth}
+ haii
+ \column{0.5\textwidth}
+ hello
+ \end{columns}
+ \begin{cases}
+ a \\
+ b\\
+ c \\
+ d
+ \end{cases}
+\end{frame}
+\begin{frame}
+\begin{enumerate}
+\begin{multicols}{4}
+\item 1
+\item 1
+\item 1
+\item 1
+\item 1
+\item 1
+\item 1
+\item 1
+\item 1
+\end{multicols}
+\end{enumerate}
+\end{frame}
+\begin{frame}[standout]
+    \begin{equation}
+        \sum_{n=1}^{\infty} 2^{-n} = \\
+        \int_{a}^{b} x^2 \\
+        \int_{a}^{b} x^2 dx
+    \end{equation}
+\end{frame}
+\end{document}
